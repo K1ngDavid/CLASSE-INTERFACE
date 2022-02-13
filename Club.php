@@ -1,6 +1,6 @@
 <?php
 
-class Club implements Comparable
+class Club extends Sport implements Comparable
 {
     private int $idClub;
     private String $nomClub;
@@ -19,14 +19,12 @@ class Club implements Comparable
         $this->nomClub = $nomClub;
         $this->nbPoints = $nbPoints;
     }
-
     /**
      * @param int $idClub
      * @param String $nomClub
      * @param int $nbPoints
      * @param Sport $LesSports
      */
-
     /**
      * @return int
      */

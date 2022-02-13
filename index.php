@@ -24,8 +24,25 @@ $listClub[3]->AjouterSport(new Sport("Tennis",2));
 
 
 
-
 foreach ($listClub as $key => $item)
 {
-    echo "<br><br>".$key.")".$item->getNomClub();
+    echo '<br><br><a href='."?test=".$item->getNomClub().'>'.$key.")".$item->getNomClub().'</a>';
+
 }
+
+if($_GET['test'] == 'PSG'){
+
+        echo $listClub[1]->getLesSports()->getNomSport();
+}
+
+if($_GET['test'] == 'Lyon'){
+    foreach($listClub[2] as $value){
+        echo $value;
+    }
+
+}
+if($_GET['test'] == 'Saint'){
+    echo $listClub[3]->getLesSports()->getNomSport();
+}
+
+?>
