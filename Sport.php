@@ -24,11 +24,10 @@ class Sport implements ISport
     {
         return $this->nbJoueurs;
     }
-    public function getDescription(): string
+    public function getDescription()
     {
         return 'Description : Nom du sport: "'.$this->nomSport.'" Nb de joueurs :'.$this->nbJoueurs;
     }
-
 
 
 }

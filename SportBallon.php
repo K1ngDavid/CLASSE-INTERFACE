@@ -2,16 +2,16 @@
 
 class SportBallon extends Sport
 {
-    private int $largeur;
-    private int $longueur;
+    private  $largeur;
+    private  $longueur;
 
     /**
      * @param int $largeur
      * @param int $longueur
      */
-    public function __construct(string $NomSport , int $nbjoueur ,int $largeur, int $longueur)
+    public function __construct(string $nomSport , int $nbJoueurs ,int $largeur, int $longueur)
     {
-        parent::__construct($NomSport,$nbjoueur);
+        parent::__construct($nomSport,$nbJoueurs);
         $this->largeur = $largeur;
         $this->longueur = $longueur;
     }

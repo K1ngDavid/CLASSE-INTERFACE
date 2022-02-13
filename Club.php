@@ -6,7 +6,6 @@ class Club extends Sport implements Comparable
     private String $nomClub;
     private int $nbPoints;
     private $LesSports = array();
-
     /**
      * @param int $idClub
      * @param String $nomClub
@@ -32,7 +31,6 @@ class Club extends Sport implements Comparable
     {
         return $this->idClub;
     }
-
     /**
      * @return String
      */
@@ -40,7 +38,6 @@ class Club extends Sport implements Comparable
     {
         return $this->nomClub;
     }
-
     /**
      * @return int
      */
@@ -48,11 +45,10 @@ class Club extends Sport implements Comparable
     {
         return $this->nbPoints;
     }
-
     /**
      * @return Sport
      */
-    public function getLesSports(): Sport
+    public function getLesSports()
     {
         return $this->LesSports;
     }
@@ -63,11 +59,8 @@ class Club extends Sport implements Comparable
     /**
      * @param Sport $LesSports
      */
-    public function AjouterSport(Sport $LesSports): void
+    public function AjouterSport(Sport $sport): void
     {
-        $this->LesSports = $LesSports;
+        $this->LesSports[]= $sport;
     }
-
-
-
 }
