@@ -24,22 +24,6 @@ $listClub[3]->AjouterSport(new Sport("Tennis",2));
 
 
 
-/*
-foreach ($listClub as $key => $item)
-{
-    echo '<br><br><a href='."?id={$key}>{$key} - {$item->getNomClub()} {$item->getNbPoints()}</a><br>";
-
-}
-
-if (isset($_GET['id'])) {
-    echo '<h2>Liste des sports de '.$listClub[$_GET['id']]->getNomClub().'</h2>';
-    $sp1 = $listClub[$_GET['id']]->getLesSports();
-    foreach ($sp1 as $keySp1 => $valueSp1){
-        echo $valueSp1->getDescription();
-    }
-}
-*/
-
 foreach ($listClub as $key => $item)
 {
     echo '<br><br><a href='."?test=".$item->getNomClub().'>'.$key.")".$item->getNomClub().'</a>';
