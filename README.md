@@ -15,7 +15,7 @@ Copy the link
 
 And in the wanted location on your terminal , write the following :
 
-- *git@github.com:K1ngDavid/CLASSE-INTERFACE.git*
+- git@github.com:K1ngDavid/CLASSE-INTERFACE.git
 
 
 <br><br>
